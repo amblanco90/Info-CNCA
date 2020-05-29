@@ -41,6 +41,13 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>io.flutter.embedded_views_preview</key>
+	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiYWwzNCIsImEiOiJja2FlMm1iYm0wMTduMnFvNTIzaHlvN2d4In0._caNCHeEEqrk6fO4i75wVA</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Shows your location on the map and helps improve OpenStreetMap</string>
+	<key>NSLocationAlwaysUsageDescription</key>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Need to upload image</string>
 	<key>NSCameraUsageDescription</key>

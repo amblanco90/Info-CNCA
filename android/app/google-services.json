@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "93496622671",
+    "firebase_url": "https://info-cnca.firebaseio.com",
+    "project_id": "info-cnca",
+    "storage_bucket": "info-cnca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93496622671:android:51366ac6d637598baa743a",
+        "android_client_info": {
+          "package_name": "com.zakariahextech.lets_head_out"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93496622671-n65m76er9mqemss0j9vvn97bkovd5sfa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zakariahextech.lets_head_out",
+            "certificate_hash": "eaa702705558d513637f9378d03f73bf90c44a9b"
+          }
+        },
+        {
+          "client_id": "93496622671-7ovulc1rbeg89351h54aibobjj9hrumv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNg4PGowLx-jXp93eCabP9-E0iinBSeIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93496622671-7ovulc1rbeg89351h54aibobjj9hrumv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

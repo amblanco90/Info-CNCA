@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:InfoCNCA/helpers/appData.dart';
 import 'package:InfoCNCA/providers/pushNotificationsProvider.dart';
 import 'package:InfoCNCA/utils/bottomBars.dart';
@@ -31,8 +33,13 @@ class _HomeState extends State<Home> {
     _pageController = PageController(
       initialPage: widget.int!=null?widget.int:0
     );
-     final pushProvider = PushNotificationProvider();
-    pushProvider.initNotifications(context);
+     if(Platform.isAndroid){
+
+       final pushProvider = PushNotificationProvider();
+       pushProvider.initNotifications(context);
+
+     }
+    
     setState(() {
       
     });

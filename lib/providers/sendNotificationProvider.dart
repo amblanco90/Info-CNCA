@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:http/http.dart';
@@ -10,7 +11,9 @@ class SendNotificationsProvider {
   final FirebaseMessaging firebaseMessaging = FirebaseMessaging();
 
   Future<Map<String, dynamic>> sendAndRetrieveMessage(title) async {
-    await firebaseMessaging.requestNotificationPermissions(
+    if(Platform.isAndroid){
+
+      await firebaseMessaging.requestNotificationPermissions(
       const IosNotificationSettings(
           sound: true, badge: true, alert: true, provisional: false),
     );
@@ -42,4 +45,7 @@ class SendNotificationsProvider {
 
     
   }
+
+    }
+    
 }

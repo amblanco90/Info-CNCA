@@ -66,7 +66,7 @@ class _SignInPageState extends State<SignInPage>
             child: Center(
               child: Container(
                   width: 80 ,
-                  child: Image.asset("assets/two.png")),
+                  child: Image.asset("assets/logoapp.png")),
             ),
             radius: 66,
           ),),

@@ -66,10 +66,12 @@ class _SliderLayoutViewState extends State<SliderLayoutView> {
             children: <Widget>[
                   FlatButton(
                         onPressed:()=>Navigator.pop(context),
-                      child: Align(
-                          alignment: Alignment.bottomLeft,
-                          child: BoldText('Volver',14,kblack),
-                        ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          Icon(Icons.close)
+                        ],
+                      )
                       ),
                 
                   CitiesImage(widget.imagen, ""),

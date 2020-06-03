@@ -131,7 +131,7 @@ class _LocationNodoState extends State<LocationNodo> {
                 ),
                 Column(
                   children: <Widget>[
-                    BoldText("Ver en mapa", 20.0, kdarkBlue),
+                    BoldText("Ver en mapa", 20.0, Colors.black),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
                       child: Image.asset(
@@ -141,7 +141,7 @@ class _LocationNodoState extends State<LocationNodo> {
                         width: MediaQuery.of(context).size.width,
                       ),
                     ),
-                    NormalText("Elige tu medio de transporte", kdarkBlue, 15.0),
+                    NormalText("Elige tu medio de transporte", Colors.black, 15.0),
                     SizedBox(height: 20.0,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -151,18 +151,18 @@ class _LocationNodoState extends State<LocationNodo> {
                           onPressed: () {
                             map(NavigationMode.walking);
                           },
-                          icon: Icon(FontAwesomeIcons.walking,color: kdarkBlue,)),
+                          icon: Icon(FontAwesomeIcons.walking,color: korange,)),
                       IconButton(
                           onPressed: () {
                             map(NavigationMode.drivingWithTraffic);
                           },
-                          icon: Icon(FontAwesomeIcons.bus,color: kdarkBlue,)),
+                          icon: Icon(FontAwesomeIcons.bus,color: korange,)),
 
                       IconButton(
                           onPressed: () {
                             map(NavigationMode.cycling);
                           },
-                          icon: Icon(FontAwesomeIcons.biking,color: kdarkBlue,))
+                          icon: Icon(FontAwesomeIcons.biking,color: korange,))
                     ])
                   ],
                 ),

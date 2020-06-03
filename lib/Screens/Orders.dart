@@ -47,11 +47,12 @@ class _OrdersState extends State<Orders> with SingleTickerProviderStateMixin {
       body: Scaffold(
         backgroundColor: kwhite,
         appBar: TabBar(
-          labelColor: kdarkBlue,
+          unselectedLabelColor: kgreyDark,
+          labelColor: korange,
           labelStyle:
               TextStyle(fontFamily: "nunito", fontWeight: FontWeight.bold),
           controller: tabController,
-          indicatorColor: kdarkBlue,
+          indicatorColor: korange,
           tabs: <Widget>[
             Tab(text: "Administrar usuarios"),
             Tab(text: "Noticias"),

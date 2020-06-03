@@ -65,7 +65,7 @@ class _SignInPageState extends State<SignInPage>
             backgroundColor: Colors.white,
             child: Center(
               child: Container(
-                  width: 80 ,
+                  width: 150 ,
                   child: Image.asset("assets/logoapp.png")),
             ),
             radius: 66,

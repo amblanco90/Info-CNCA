@@ -85,13 +85,13 @@ class _FormularioState extends State<Formulario> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      NormalText("Enviar a", kgreyDark, 16.0),
+                      NormalText("Enviar a", korange, 16.0),
                       DropdownDestinatarios(
                         destinatario: (String val) {
                           destinatario = val;
                         },
                       ),
-                      NormalText("Importancia", kgreyDark, 16.0),
+                      NormalText("Importancia", korange, 16.0),
                       DropDownImortancia(
                         importancia: (String val) {
                           importancia = val;
@@ -111,7 +111,9 @@ class _FormularioState extends State<Formulario> {
                             children: <Widget>[
                               IconButton(
                                 onPressed: getImage,
-                                icon: Icon(Icons.camera_alt, color: color),
+                                icon: Icon(
+
+                                    Icons.camera_alt, color: color,),
                               ),
                               Positioned(
                                 bottom: 27,

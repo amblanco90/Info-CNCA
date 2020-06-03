@@ -12,6 +12,7 @@ class NormalNotificationsProvider {
      final notf = {
         "Titulo": titulo,
         "Cuerpo": texto,
+        "UTC":DateTime.now().toUtc().toString(),
         "Id": id,
         "fecha": DateTime.now().day.toString()+ "/"+DateTime.now().month.toString()+"/"+DateTime.now().year.toString(),
         "hora": DateTime.now().hour.toString()+":"+DateTime.now().minute.toString()
@@ -25,7 +26,8 @@ class NormalNotificationsProvider {
    }
 
    getAllNotificaciones(){
-     final notf = fb.orderBy("hora",descending: false).limit(20).snapshots();
+
+     final notf = fb.orderBy("UTC",descending: true).snapshots();
      return notf;
 
    }

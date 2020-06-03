@@ -138,9 +138,9 @@ class _UsuariosListState extends State<UsuariosList> {
                 child: Container(
                     padding: EdgeInsets.symmetric(horizontal: 5, vertical: 3),
                     decoration: BoxDecoration(
-                        color: Color(0xffFBB97C),
+                        color: Colors.orange.shade100,
                         borderRadius: BorderRadius.circular(13)),
-                    child: Icon(Icons.delete, color: kdarkBlue)),
+                    child: Icon(Icons.delete, color: korange)),
               ),
               Spacer(),
               Spacer(),
@@ -157,9 +157,9 @@ class _UsuariosListState extends State<UsuariosList> {
                 child: Container(
                     padding: EdgeInsets.symmetric(horizontal: 5, vertical: 3),
                     decoration: BoxDecoration(
-                        color: Color(0xffFBB97C),
+                        color:Colors.orange.shade100,
                         borderRadius: BorderRadius.circular(13)),
-                    child: Icon(Icons.edit, color: kdarkBlue)),
+                    child: Icon(Icons.edit, color: korange)),
               )
             ],
           ),

@@ -37,7 +37,7 @@ class _NodoListState extends State<NodoList> {
                 List<DocumentSnapshot> docs = snapshot.data.documents;
 
                 return PageIndicatorContainer(
-                  indicatorColor: korangelite,
+                  indicatorColor: Colors.orange,
                   length: docs.length,
                   
                   child: PageView.builder(

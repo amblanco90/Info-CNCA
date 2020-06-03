@@ -40,14 +40,15 @@ class _ProfileState extends State<Profile> {
         children: <Widget>[
           
           Scaffold(
+            backgroundColor: korange,
             appBar: AppBar(
-          backgroundColor: kwhite,
-          title: BoldText("Perfil", 25, kblack),
+              backgroundColor: korange,
+          title: BoldText("Perfil", 25, kwhite),
           centerTitle: true,
           elevation: 0.0,
         ),
             
-            backgroundColor: kwhite,
+
             body: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -71,11 +72,11 @@ class _ProfileState extends State<Profile> {
                   ),
                   SizedBox(height:20.0),
                   
-                    Center(child: BoldText(docs[0].data["Nombre"],15.0,kdarkBlue)),
+                    Center(child: BoldText(docs[0].data["Nombre"],15.0,kwhite)),
                   
-                 Center(child: NormalText(docs[0].data["Correo"],kdarkBlue,15.0)),
+                 Center(child: NormalText(docs[0].data["Correo"],kwhite,15.0)),
                  SizedBox(height: 40.0,),
-                Center(child: BoldText('ACCIONES DISPONIBLES',15.0,kdarkBlue)),
+                Center(child: BoldText('ACCIONES DISPONIBLES',15.0,kwhite)),
 
                  FlatButton(
                         onPressed: () {
@@ -99,7 +100,7 @@ class _ProfileState extends State<Profile> {
                           "Eliminar mi cuenta",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            color: Colors.orangeAccent.shade700,
+                            color: kwhite,
                             fontFamily: "Nunito",
                             fontSize: 15.0,
                           ),
@@ -113,7 +114,7 @@ class _ProfileState extends State<Profile> {
                           "Cerrar sesión",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            color: Colors.orangeAccent.shade700,
+                            color: kwhite,
                             fontFamily: "Nunito",
                             fontSize: 15.0,
                           ),

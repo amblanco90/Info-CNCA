@@ -31,7 +31,7 @@ class _BottomBarsState extends State<BottomBars> {
             BottomNavyBarItem(
               
               icon: Icon(Icons.home),
-              activeColor: kdarkBlue,
+              activeColor: Colors.orange,
               inactiveColor: kgreyDark,
               title: Text(
                 "Inicio",
@@ -45,7 +45,7 @@ class _BottomBarsState extends State<BottomBars> {
                 style: TextStyle(fontFamily: "nunito"),
               ),
               inactiveColor: kgreyDark,
-              activeColor: kdarkBlue,
+              activeColor: Colors.orange,
             ),
             BottomNavyBarItem(
               icon: Icon(Icons.notifications),
@@ -54,7 +54,7 @@ class _BottomBarsState extends State<BottomBars> {
                 style: TextStyle(fontFamily: "nunito", fontSize: 12.0),
               ),
               inactiveColor: kgreyDark,
-              activeColor: kdarkBlue,
+              activeColor: Colors.orange,
             ),
             BottomNavyBarItem(
               icon: Icon(Icons.person),
@@ -63,7 +63,7 @@ class _BottomBarsState extends State<BottomBars> {
                 style: TextStyle(fontFamily: "nunito"),
               ),
               inactiveColor: kgreyDark,
-              activeColor: kdarkBlue,
+              activeColor: Colors.orange,
             )
           ],
           onItemSelected: (index) {
@@ -76,7 +76,7 @@ class _BottomBarsState extends State<BottomBars> {
             BottomNavyBarItem(
               
               icon: Icon(Icons.home),
-              activeColor: kdarkBlue,
+              activeColor: Colors.orange,
               inactiveColor: kgreyDark, 
               title: Text(
                 "Inicio",
@@ -90,7 +90,7 @@ class _BottomBarsState extends State<BottomBars> {
                 style: TextStyle(fontFamily: "nunito", fontSize: 12.0),
               ),
               inactiveColor: kgreyDark,
-              activeColor: kdarkBlue,
+              activeColor: Colors.orange,
             ),
             BottomNavyBarItem(
               icon: Icon(Icons.person),
@@ -99,7 +99,7 @@ class _BottomBarsState extends State<BottomBars> {
                 style: TextStyle(fontFamily: "nunito"),
               ),
               inactiveColor: kgreyDark,
-              activeColor: kdarkBlue,
+              activeColor: Colors.orange,
             )
           ],
           onItemSelected: (index) {

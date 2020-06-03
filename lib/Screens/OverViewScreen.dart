@@ -42,6 +42,15 @@ class _OverViewPageState extends State<OverViewPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: IconButton(
+
+          color: kgreyDark,
+          icon: Icon(
+
+              Icons.arrow_back,
+              color: kgreyDark,), onPressed: (){
+        Navigator.pop(context);
+      }),
       backgroundColor: kwhite,
       body: SingleChildScrollView(
         
@@ -57,11 +66,13 @@ class _OverViewPageState extends State<OverViewPage>
               height: 700,
               child: Scaffold(
                 appBar: TabBar(
-                  labelColor: kdarkBlue,
+                  labelColor: korange,
+
+                  unselectedLabelColor: kgreyDark,
                   labelStyle: TextStyle(
                       fontFamily: "nunito", fontWeight: FontWeight.bold),
                   controller: tabController,
-                  indicatorColor: kdarkBlue,
+                  indicatorColor: korange,
                   tabs: <Widget>[
                     Tab(text: "Informacion general"),
                     Tab(text: "Ubicación"),

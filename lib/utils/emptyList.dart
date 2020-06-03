@@ -14,9 +14,9 @@ class EmptyList extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          NormalText("Los registros apereceran aquí",kdarkBlue, 15.0),
+          NormalText("Los registros apereceran aquí",korange, 15.0),
           SizedBox(height:10.0),
-          Icon(Icons.add_circle_outline,color: kdarkBlue,)
+          Icon(Icons.add_circle_outline,color: korange,)
         ],
       ),
     );

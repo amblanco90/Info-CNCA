@@ -21,7 +21,7 @@ Widget buildContainer(context,foto,nombre,direccion,telefono,latitud,longitud) {
                 height: 200,
                
                 decoration: BoxDecoration(
-                    color: Colors.grey.shade100,
+                    color: Color(0xffFFEEE0),
                     borderRadius: BorderRadius.circular(15.0)),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -61,10 +61,11 @@ Widget buildContainer(context,foto,nombre,direccion,telefono,latitud,longitud) {
                             SizedBox(
                               width: 90,
                             ),
-                            BoldText("Ver mas", 12.0, kblack),
+                            BoldText("Ver mas", 12.0, korange),
                             Icon(
                               Icons.navigate_next,
                               size: 15.0,
+                              color: korange,
                             ),
                           ],
                         )

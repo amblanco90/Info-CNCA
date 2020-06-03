@@ -49,7 +49,7 @@ class NoticiasProvider {
 
       DocumentReference addNotice = await fb.document(destinatario).collection(destinatario).add(user);
       if (importancia == "Urgente") {
-       
+
         notificacionesProvider.guardarNotificaciones(
             destinatario, titulo, addNotice.documentID,importancia);
         print(addNotice.documentID);

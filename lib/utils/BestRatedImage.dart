@@ -33,7 +33,7 @@ class BestRatedImage extends StatelessWidget {
           width: 300,
           height: 150,
           decoration: BoxDecoration(
-              color: Colors.grey.shade100,
+              color: Color(0xffFFEEE0),
               borderRadius: BorderRadius.circular(15.0)),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -45,12 +45,18 @@ class BestRatedImage extends StatelessWidget {
                     borderRadius: new BorderRadius.only(
                         topLeft: Radius.circular(15),
                         bottomLeft: Radius.circular(15)),
-                    child: FadeInImage(
-                        fit: BoxFit.cover,
-                        placeholder: AssetImage("assets/two.png"),
-                        image: imageUrl != null
-                            ? NetworkImage(imageUrl)
-                            : AssetImage("assets/two.png"))),
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      child: FadeInImage(
+                          fit: BoxFit.cover,
+                          placeholder: AssetImage(
+
+                              "assets/two.png"),
+                          image: imageUrl != null
+                              ? NetworkImage(imageUrl)
+                              : AssetImage("assets/two.png")),
+                    )),
               ),
               SizedBox(
                 width: 10.0,
@@ -81,7 +87,7 @@ class BestRatedImage extends StatelessWidget {
                           child: Container(
                             child: Icon(
                               Icons.edit,
-                              color: kdarkBlue,
+                              color: Colors.orange,
                             ),
                           )):Container(),
                       SizedBox(width: 10.0),
@@ -113,7 +119,7 @@ class BestRatedImage extends StatelessWidget {
                           child: Container(
                             child: Icon(
                               Icons.delete,
-                              color: kdarkBlue,
+                              color: Colors.orange,
                             ),
                           )):Container(),
                       SizedBox(width: 10.0),
@@ -135,11 +141,12 @@ class BestRatedImage extends StatelessWidget {
                             BoldText(
                               "Ver mas",
                               12.0,
-                              kdarkBlue,
+                              Colors.orange,
                             ),
                             Icon(
                               Icons.navigate_next,
                               size: 15.0,
+                              color: Colors.orange,
                             ),
                           ],
                         ),

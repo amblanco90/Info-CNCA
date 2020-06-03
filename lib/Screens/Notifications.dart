@@ -59,9 +59,10 @@ class _NotificationsState extends State<Notifications> {
       onTap: () {
         print("tap");
         showLoadingDialog();
-        noticiasProvider.getNoticia(id,destinatario).then((value) {
+        noticiasProvider.getNoticia(id, destinatario).then((value) {
           print(value.exists);
           if (value.exists == false) {
+            // ignore: missing_return
             hideLoadingDialog();
             return showDialog(
                 context: context,
@@ -75,7 +76,7 @@ class _NotificationsState extends State<Notifications> {
                 context,
                 MaterialPageRoute(
                     builder: (BuildContext context) => FutureBuilder(
-                        future: noticiasProvider.getNoticia(id,destinatario),
+                        future: noticiasProvider.getNoticia(id, destinatario),
                         builder:
                             (BuildContext context, AsyncSnapshot snapshot) {
                           DocumentSnapshot docs = snapshot.data;

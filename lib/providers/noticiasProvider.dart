@@ -29,13 +29,13 @@ class NoticiasProvider {
           "HoraFecha":DateTime.now()
         };
 
-      DocumentReference addNotice = await fb.document(destinatario).collection(destinatario).add(user);
-        
-          if (importancia == "Urgente") {
+        DocumentReference addNotice = await fb.document(destinatario).collection(destinatario).add(user);
+        if (importancia == "Urgente") {
+
           notificacionesProvider.guardarNotificaciones(
-              titulo, texto, addNotice.documentID,importancia);
+              destinatario, titulo, addNotice.documentID,importancia);
           print(addNotice.documentID);
-          }
+        }
       });
     } else {
       final user = {

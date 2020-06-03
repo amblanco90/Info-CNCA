@@ -60,13 +60,19 @@ class PushNotificationProvider {
   }
 
   void _colorfullAlert(texto,context) {
-    Flushbar(
-                 flushbarPosition: FlushbarPosition.TOP,
-                 messageText: Text( "Nuevo anuncio: (Audiencia) "+ texto,style: TextStyle(fontFamily:"nunito"),),
-                 dismissDirection: FlushbarDismissDirection.HORIZONTAL, 
-                  duration:  Duration(seconds: 7),
-                  backgroundColor: korangelite,
-                )..show(context);
+    Future.delayed(Duration(seconds: 2), () {
+
+      Flushbar(
+        flushbarPosition: FlushbarPosition.TOP,
+        messageText: Text( "Nuevo anuncio: (Audiencia) "+ texto,style: TextStyle(fontFamily:"nunito"),),
+        dismissDirection: FlushbarDismissDirection.HORIZONTAL,
+        duration:  Duration(seconds: 7),
+        backgroundColor: korangelite,
+      )..show(context);
+
+    });
+
+
   }
 
   dispose() {

@@ -1,13 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:InfoCNCA/Screens/BoardingView/sliderDots.dart';
-import 'package:InfoCNCA/Screens/BoardingView/sliderItems.dart';
 import 'package:InfoCNCA/utils/CitiesImage.dart';
 import 'package:InfoCNCA/utils/TextStyles.dart';
 import 'package:InfoCNCA/utils/consts.dart';
 
-import 'Slider.dart';
 
 class SliderLayoutView extends StatefulWidget {
   final imagen;

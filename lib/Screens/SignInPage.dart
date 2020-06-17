@@ -109,6 +109,47 @@ class _SignInPageState extends State<SignInPage>
               SizedBox(
                 height: 50.0,
               ),
+              ColorizeAnimatedTextKit(
+                              onTap: () {
+                                print("Tap Event");
+                              },
+                              text: [
+                               "Powered by: ADSI 52"
+                              ],
+                              textStyle:
+                                  TextStyle(fontSize: 15.0, fontFamily: "Nunito"),
+                              colors: [
+                                Colors.white,
+                                Colors.purple,
+                                Colors.blue,
+                                Colors.yellow,
+                                Colors.red,
+                              ],
+                              textAlign: TextAlign.center,
+                              alignment:
+                                  AlignmentDirectional.center // or Alignment.topLeft
+                              ),
+                              ColorizeAnimatedTextKit(
+                              onTap: () {
+                                print("Tap Event");
+                              },
+                              text: [
+                               "Email: alexa050802@gmail.com"
+                              ],
+                              textStyle:
+                                  TextStyle(fontSize: 15.0, fontFamily: "Nunito"),
+                              colors: [
+                                Colors.white,
+                                Colors.purple,
+                                Colors.blue,
+                                Colors.yellow,
+                                Colors.red,
+                              ],
+                              textAlign: TextAlign.center,
+                              alignment:
+                                  AlignmentDirectional.center // or Alignment.topLeft
+                              )
+                       
               
             ],
           ),
